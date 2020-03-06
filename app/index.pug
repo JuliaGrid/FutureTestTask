@@ -1,0 +1,137 @@
+extends layout/main
+
+block variables
+
+block content
+  section.welcome
+    p.welcome__slogan
+    div.welcome__cost.cost
+      div.cost__info
+        p.cost__info-name стоимость
+        p.cost__info-number 1500р
+      div.cost__logo
+        p.cost__logo-procent %
+    button.welcome__book Забронировать время
+
+  section.photosession
+    h2.photosession__title
+    div.photosession__video
+    p.photosession__description
+    table.photosession__detail
+      tr
+        td.photosession__icon 
+          img
+        td.photosession__note 3 часа съемки
+      tr
+        td.photosession__icon
+          img
+        td.photosession__note Русский
+      tr
+        td.photosession__icon
+          img
+        td.photosession__note от 850$
+      tr
+        td.photosession__icon
+          img
+        td.photosession__note Дубаи
+      tr
+        td.photosession__icon
+          img
+        td.photosession__note Более 50 фотографий
+      tr
+        td.photosession__icon
+          img
+        td.photosession__note 
+          p Более 150 отзывов с оценкой
+
+  section.photos
+    h2.photos__title
+    ul.photos__list
+      li.photos__item
+
+  section.organizer
+    div.organizer__photograph
+      img.organizer__photograph-img(src="", alt="")
+      p.organizer__photograph-name Марина Иванова
+      p.organizer__photograph-job Фотограф
+      a.organizer__photograph-more(href="") Показать больше информации о фотографе
+    div.photograph__description
+      h3.photograph__description-title Об организаторе:
+      p.photograph__description-text.
+        Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы экспертов туристической отрасли, которые хорошо разбираются 
+        в маркетинге, операциях 
+        и услугах обслуживания клиентов, специализирующихся 
+        на совместном использовании 
+        и частных турах. 
+
+        Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. 
+        Мы никогда не зависим 
+        от субпоставщиков 
+        и не свяжемся…
+      a.photograph__description-more Читать еще
+      h3.photograph__description-title Что я предоставлю:
+      p.photograph__description-text.
+        Встречу вас на машине после длительного перелёта. 
+        Качественный подбор места 
+        и локации для вашей съемки. 
+        При необходимости всегда возможно прерваться 
+        на обед/ужин.
+        Более 50 фотографий на выходе 
+        с обработкой и замечательные впечатления о Дубае !
+      a.photograph__description-more Читать еще
+
+  section.close-photosession
+    h2.close-photosession__title
+    table.close-photosession__info
+      tr
+        td
+          div.close-photosession__description
+            p.close-photosession__time 15:00 - 18:00
+            p.close-photosession__cost 850$
+            p.close-photosession__place Осталось — 1 место
+          button.close-photosession__book Выбрать
+      tr
+        td
+          div.close-photosession__description
+            p.close-photosession__time 19:00 - 22:00
+            p.close-photosession__cost 850$
+            p.close-photosession__place Осталось — 1 место
+          button.close-photosession__book Выбрать
+      tr
+        td.photosession__icon
+          img
+        td.photosession__note 
+          p Более 150 отзывов с оценкой
+
+      section.meeting
+        div.meeting__map
+        div.meeting__info
+          ul.meeting__list
+            li.meeting__item
+              p.meeting__number 1
+              div.meeting__decription 
+                p.meeting__question Где встречаемся?
+                p.meeting__answer Москва
+            li.meeting__item
+              p.meeting__number 2
+              div.meeting__decription 
+                p.meeting__question Время съемки
+                p.meeting__answer 3 часа
+            li.meeting__item
+              p.meeting__number 3
+              div.meeting__decription 
+                p.meeting__question Мест осталось:
+                p.meeting__answer 2 места
+          div.meeting__organizer
+            img.meeting__organizer-img(src="", alt="")
+            div.meeting__organizer-info
+              p.meeting__organizer-name Мария Иванова
+              p.meeting__organizer-job Фотограф
+              a.meeting__organizer-more Показать больше информации о фотографе
+  
+  section.reviews
+    h2.reviews__title
+    ul.reviews__list
+      li.reviews__item
+        
+

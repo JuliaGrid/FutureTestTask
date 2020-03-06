@@ -1,0 +1,32 @@
+{
+  "name": "futuretesttask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuliaGrid/FutureTestTask.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuliaGrid/FutureTestTask/issues"
+  },
+  "homepage": "https://github.com/JuliaGrid/FutureTestTask#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "pug": "^2.0.4",
+    "webpack": "^4.42.0"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
