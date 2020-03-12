@@ -174,10 +174,10 @@ block content
             p.close-photosession__place Осталось — 1 место
           button.close-photosession__book Выбрать
       tr
-        td.close-photosession__review
+        td.close-photosession__review-td
           img(src="img/review.svg", alt="")
           div.close-photosession__review-group
-            p Более 150 отзывов с оценкой
+            p.close-photosession__review Более <b id="close-photosession__review-150">150</b><b id="close-photosession__review-50">50</b> отзывов с оценкой
             img(src="img/rate.svg", alt="")
 
   section.meeting
@@ -226,8 +226,4 @@ block content
           p.meeting__organizer-name Мария Иванова
           p.meeting__organizer-job Фотограф
           a.meeting__organizer-more Показать больше информации о фотографе
-  
-  section.reviews
-    h2.reviews__title
-    ul.reviews__list
-      li.reviews__item
+

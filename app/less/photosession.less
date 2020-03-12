@@ -140,6 +140,10 @@
     padding-bottom: 6px;
 }
 
+#photosession__note-50 {
+    display: none;
+}
+
 @media (min-width: 1200px) {
     .photosession {
         width: 1140px;
@@ -164,6 +168,7 @@
 
     .photosession__video-wrapper {
         order: 2;
+        cursor: pointer;
     }
 
     .photosession__video {
@@ -201,11 +206,17 @@
         tbody {
             display: flex;
             flex-direction: column;
+            width: 570px;
         }
     }
 
     .photosession__note {
         padding-left: 8px;
+    }
+
+    .photosession__note-review {
+        display: flex;
+        padding-right: 310px;
     }
 
     .photosession__detail-tr:nth-child(2) {
@@ -251,10 +262,22 @@
         order: 6;
         margin-top: 27px;
         .photosession__icon {
+            padding-top: 20px;
+            padding-bottom: 30px;
             img {
                 width: 32px;
                 height: 35px;
             }
         }
+    }
+
+    #photosession__note-150 {
+        display: none;
+    }
+
+    #photosession__note-50 {
+        display: block;
+        margin-left: 3px;
+        margin-right: 3px;
     }
 }

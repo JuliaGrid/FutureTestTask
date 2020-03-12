@@ -84,7 +84,7 @@
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
-.close-photosession__review {
+.close-photosession__review-td {
     display: flex;
     font-size: 13px;
     line-height: 19px;
@@ -93,6 +93,12 @@
 
 .close-photosession__review-group {
     margin-left: 10px;
+}
+
+#close-photosession__review-50 {
+    display: none;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 @media (min-width: 1200px) {
@@ -145,7 +151,7 @@
     }
 
     .close-photosession__info tr:last-child td {
-        width: 442px;
+        width: 460px;
         margin-left: 26px;
     }
 
@@ -166,7 +172,23 @@
 
     .close-photosession__review-group {
         display: flex;
+        justify-content: space-between;
         font-size: 18px;
         line-height: 26px;
+    }
+
+    .close-photosession__review {
+        display: flex;
+        width: 280px;
+    }
+
+    #close-photosession__review-150 {
+        display: none;
+    }
+
+    #close-photosession__review-50 {
+        display: block;
+        margin-left: 3px;
+        margin-right: 3px;
     }
 }

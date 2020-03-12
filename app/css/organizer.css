@@ -81,9 +81,6 @@
   margin-top: 10px;
   margin-left: 10px;
 }
-#photosession__note-50 {
-  display: none;
-}
 #about {
   display: none;
 }
@@ -105,11 +102,5 @@
     width: 584px;
     margin-top: 37px;
     margin-left: 0;
-  }
-  #photosession__note-150 {
-    display: none;
-  }
-  #photosession__note-50 {
-    display: block;
   }
 }
