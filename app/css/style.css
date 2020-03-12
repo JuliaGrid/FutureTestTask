@@ -573,7 +573,7 @@
   }
   .photosession__note-review {
     display: flex;
-    padding-right: 310px;
+    padding-right: 308px;
   }
   .photosession__detail-tr:nth-child(2) {
     order: 4;
@@ -1197,6 +1197,7 @@
   justify-content: space-between;
   width: 290px;
   margin: auto;
+  margin-top: 40px;
   align-items: center;
 }
 .main-footer__social-networks {
