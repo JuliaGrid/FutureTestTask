@@ -1,0 +1,212 @@
+.book {
+  background-color: white;
+  width: 290px;
+  margin: auto;
+  border-radius: 6px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -145px;
+  z-index: 4;
+  display: none;
+  animation-duration: 1s;
+  animation-name: bookRollMobile;
+}
+@keyframes bookRollMobile {
+  from {
+    top: -3000px;
+  }
+  to {
+    top: 80px;
+  }
+}
+.book__close {
+  background: none;
+  border: none;
+  margin-top: 16px;
+  margin-left: 257px;
+}
+.book__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 16px;
+}
+.book__form {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: auto;
+  margin-top: 24px;
+}
+.book__form label + input {
+  margin-top: 10px;
+}
+.book__form input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+  font-family: inherit;
+  border-radius: 3px;
+  border: 1px solid #C7C7C7;
+  font-size: 16px;
+  line-height: 20px;
+}
+.book__form .book__button {
+  font-size: 14px;
+  line-height: 17px;
+  border: 2px solid #FC9B09;
+}
+.book__email-label {
+  margin-top: 14px;
+}
+.book__name-label {
+  margin-top: 12px;
+}
+.book__surename-label {
+  margin-top: 17px;
+}
+.book__phone-label {
+  margin-top: 20px;
+}
+.book__card-label {
+  margin-top: 20px;
+}
+#book__number {
+  border-radius: 3px 3px 0px 0px;
+}
+#book__validaty {
+  border-radius: 0;
+  border-top: none;
+  border-bottom: none;
+  width: 249px;
+}
+#book__cvv {
+  border-radius: 0px 0px 3px 3px;
+  width: 249px;
+}
+.book__license {
+  display: flex;
+  margin-top: 23px;
+}
+.book__license-check-label {
+  display: block;
+  position: relative;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.book__license-check {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.book__license-check-pseudo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #C7C7C7;
+  border-radius: 2px;
+}
+.book__license-check:checked ~ .book__license-check-pseudo {
+  background: #FC9B09;
+  border: 1px solid #FC9B09;
+  box-shadow: 0px 0px 3px rgba(201, 64, 66, 0.6);
+}
+.book__license-check:checked ~ .book__license-check-pseudo:after {
+  content: '';
+  background-image: url(../img/check.svg);
+  width: 11px;
+  height: 8px;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+.book__license-text {
+  width: 220px;
+  margin: 0;
+  margin-left: 10px;
+}
+.book__button {
+  background-color: #FC9B09;
+  font-weight: normal;
+  color: white;
+  margin: auto;
+  margin-top: 23px;
+  margin-bottom: 40px;
+  height: 50px;
+  width: 250px;
+  cursor: pointer;
+}
+.book__button:hover {
+  background-color: white;
+  color: #FC9B09;
+  border: 2px solid #FC9B09;
+}
+.book__button:active {
+  border: 2px solid #f38d07;
+  background-color: #f38d07;
+  color: white;
+}
+.book__button:focus {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+@media (min-width: 1200px) {
+  .book {
+    width: 615px;
+    margin-left: -307.5px;
+    top: 130px;
+    animation-name: bookRoll;
+  }
+  @keyframes bookRoll {
+    from {
+      top: -3000px;
+    }
+    to {
+      top: 130px;
+    }
+  }
+  .book__close {
+    margin-left: 571px;
+    margin-top: 20px;
+  }
+  .book__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    margin-top: 20px;
+  }
+  .book__form {
+    width: 420px;
+  }
+  .book__validaty-cvv {
+    display: flex;
+  }
+  #book__validaty {
+    border-radius: 0px 0px 0px 3px;
+    border-bottom: 1px solid #C7C7C7;
+  }
+  #book__cvv {
+    border-radius: 0px 0px 3px 0px;
+    border-top: none;
+    border-left: none;
+  }
+  .book__license {
+    width: 422px;
+  }
+  .book__license-text {
+    width: 380px;
+    margin-left: 30px;
+  }
+  .book__button {
+    width: 390px;
+    height: 72px;
+  }
+}

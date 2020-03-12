@@ -1,3 +1,52 @@
+@import "header.less";
+@import "welcome.less";
+@import "book.less";
+@import "photosession.less";
+@import "photos.less";
+@import "organizer.less";
+@import "close-photosession.less";
+@import "meeting.less";
+@import "footer.less";
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat.ttf');
+  }
+
+
 body {
- color: red;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    color: #37373F;
+}
+
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+
+.black-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.2;
+  position: fixed;
+  display: none;
+  z-index: 2;
 }

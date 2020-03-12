@@ -1,0 +1,115 @@
+.organizer__photograph {
+  width: 290px;
+  margin: auto;
+  text-align: center;
+  margin-top: 63px;
+}
+.organizer__photograph-heart {
+  position: absolute;
+  margin-left: 186px;
+  margin-top: -15px;
+}
+.organizer__photograph-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  margin-top: 20px;
+}
+.organizer__photograph-job {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  margin-top: 8px;
+}
+.organizer__photograph-more {
+  color: #5286EC;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  margin: 0;
+  margin: auto;
+  margin-top: 8px;
+  display: block;
+  width: 200px;
+}
+.organizer__photograph-more:hover {
+  color: #1c56cc;
+}
+.organizer__photograph-more:active {
+  color: #04328f;
+}
+.organizer__description {
+  width: 290px;
+  margin: auto;
+}
+.organizer_description-title {
+  margin-top: 26px;
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+.organizer__description-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+.organizer__description-text-more {
+  font-size: 16px;
+  line-height: 24px;
+}
+.organizer__description-more {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #5286EC;
+  text-decoration: none;
+}
+.organizer__description-more:hover {
+  color: #1c56cc;
+}
+.organizer__description-more:active {
+  color: #04328f;
+}
+.organizer__description-more::after {
+  content: '';
+  position: absolute;
+  background-image: url('../img/arrow-down.svg');
+  width: 11px;
+  height: 6px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#photosession__note-50 {
+  display: none;
+}
+#about {
+  display: none;
+}
+#service {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .organizer {
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    margin: auto;
+  }
+  .organizer__photograph {
+    order: 2;
+    margin-top: 68px;
+  }
+  .organizer__description {
+    width: 584px;
+    margin-top: 37px;
+    margin-left: 0;
+  }
+  #photosession__note-150 {
+    display: none;
+  }
+  #photosession__note-50 {
+    display: block;
+  }
+}

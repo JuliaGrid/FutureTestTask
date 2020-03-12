@@ -1,0 +1,23 @@
+.organizer__photograph {
+  width: 290px;
+  margin: auto;
+  text-align: center;
+}
+.organizer__photograph-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+.organizer__photograph-job {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 8px;
+}
+.organizer__photograph-more {
+  color: #5286EC;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 8px;
+}

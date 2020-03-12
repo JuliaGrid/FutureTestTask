@@ -1,0 +1,147 @@
+.close-photosession__title {
+  font-size: 28px;
+  line-height: 34px;
+  width: 300px;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+}
+.close-photosession__date {
+  text-align: center;
+}
+.close-photosession__date-button {
+  display: none;
+}
+.close-photosession__info {
+  width: 290px;
+  margin: auto;
+  margin-top: 38px;
+  border: 1px solid #C7C7C7;
+  border-collapse: collapse;
+  padding: 0;
+}
+.close-photosession__info tr {
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0;
+  border-top: 0.5px solid #C7C7C7;
+}
+.close-photosession__description {
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.close-photosession__time {
+  margin: 0;
+  margin-top: 30px;
+}
+.close-photosession__cost {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  margin-top: 10px;
+}
+.close-photosession__place {
+  margin: 0;
+  margin-top: 10px;
+}
+.close-photosession__book {
+  border: 2px solid #FC9B09;
+  border-radius: 3px;
+  background: none;
+  color: #FC9B09;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  width: 126px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.close-photosession__book:hover {
+  background-color: #FC9B09;
+  color: white;
+}
+.close-photosession__book:active {
+  background-color: #f38d07;
+  color: white;
+}
+.close-photosession__book:focus {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.close-photosession__review {
+  display: flex;
+  font-size: 13px;
+  line-height: 19px;
+  margin-left: 18px;
+}
+.close-photosession__review-group {
+  margin-left: 10px;
+}
+@media (min-width: 1200px) {
+  .close-photosession {
+    width: 1140px;
+    margin: auto;
+    border-top: 0.5px solid #C7C7C7;
+    margin-top: 50px;
+  }
+  .close-photosession__title {
+    text-align: left;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .close-photosession__info {
+    width: 770px;
+    margin: 0;
+    margin-top: 30px;
+  }
+  .close-photosession__date {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .close-photosession__date-button {
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: 0.5px solid #C4C4C4;
+    border-radius: 3px;
+    display: block;
+  }
+  .close-photosession__info td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 710px;
+    margin: auto;
+  }
+  .close-photosession__info tr:first-child td {
+    width: 254px;
+    margin-left: 28px;
+  }
+  .close-photosession__info tr:last-child td {
+    width: 442px;
+    margin-left: 26px;
+  }
+  .close-photosession__description {
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .close-photosession__time {
+    margin-top: 0;
+  }
+  .close-photosession__book {
+    height: 50px;
+    width: 129px;
+  }
+  .close-photosession__review-group {
+    display: flex;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

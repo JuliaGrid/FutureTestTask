@@ -4,85 +4,161 @@ block variables
 
 block content
   section.welcome
-    p.welcome__slogan
-    div.welcome__cost.cost
-      div.cost__info
-        p.cost__info-name стоимость
-        p.cost__info-number 1500р
-      div.cost__logo
-        p.cost__logo-procent %
-    button.welcome__book Забронировать время
+    div.welcome__wrapper
+      p.welcome__slogan.
+        Эксклюзивная фотосессия 
+        при полете
+        на вертолете
+      div.welcome__cost.cost
+        div.cost__wrapper
+          div.cost__info
+            p.cost__info-name стоимость
+            p.cost__info-number 1500р
+          div.cost__logo
+            p.cost__logo-procent %
+      button.welcome__book Забронировать время
+
+  section.book
+    button.book__close
+      svg(width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg")
+        path(fill-rule="evenodd" clip-rule="evenodd" d="M16.788 0.200595C16.7244 0.136996 16.6491 0.0865556 16.566 0.0521352C16.4829 0.0177147 16.3938 0 16.3038 0C16.2139 0 16.1247 0.0177147 16.0416 0.0521352C15.9585 0.0865556 15.8833 0.136996 15.8197 0.200595L0.203694 15.8188C0.139214 15.8821 0.0876515 15.9576 0.0526867 16.0409C0.0177218 16.1242 0 16.2136 0 16.3039C0 16.3942 0.0177218 16.4837 0.0526867 16.567C0.0876515 16.6502 0.139214 16.7257 0.203694 16.789C0.266589 16.8536 0.341568 16.9047 0.424812 16.9393C0.508056 16.9739 0.597683 16.9913 0.687831 16.9903C0.869381 16.9891 1.04308 16.9168 1.17197 16.789L16.788 1.17159C16.8526 1.10831 16.9039 1.03278 16.939 0.949412C16.974 0.866046 16.9921 0.776521 16.9921 0.686092C16.9921 0.595663 16.974 0.506151 16.939 0.422785C16.9039 0.339419 16.8526 0.263874 16.788 0.200595ZM16.788 15.8188L1.17197 0.200595C1.1082 0.137006 1.03244 0.0866018 0.94919 0.0522518C0.865941 0.0179018 0.777059 0.000283532 0.687001 0.000401837C0.596942 0.000520143 0.507555 0.0183702 0.424397 0.0529388C0.341239 0.0875074 0.265632 0.138122 0.202035 0.201878C0.138437 0.265634 0.0882858 0.341284 0.0539312 0.424522C0.0195767 0.507759 0.00195591 0.596953 0.00207428 0.686999C0.00219264 0.777046 0.0197728 0.866188 0.0543461 0.949334C0.0889194 1.03248 0.139929 1.108 0.203694 1.17159L15.8197 16.789C15.8829 16.8549 15.9587 16.9075 16.0425 16.9437C16.1263 16.9799 16.2163 16.9991 16.3076 17C16.3988 17.0009 16.4894 16.9836 16.5739 16.949C16.6584 16.9145 16.7351 16.8634 16.7996 16.7988C16.8641 16.7342 16.9149 16.6574 16.9493 16.5728C16.9837 16.4882 17.001 16.3977 17 16.3064C16.9989 16.2151 16.9795 16.125 16.9431 16.0412C16.9067 15.9575 16.854 15.8819 16.788 15.8188Z" fill="#B3B3B3")
+    h2.book__title Бронирование
+    form.book__form
+      label.book__date-label(for="book__date") Дата
+      input(type="text" placeholder="14.09.2019" required)#book__date
+      label.book__email-label(for="book__email") Email
+      input(type="email" placeholder="Электронная почта" required)#book__email
+      label.book__name-label(for="book__name") Имя
+      input(type="text" required)#book__name
+      label.book__surename-label(for="book__surename") Фамилия
+      input(type="text" required)#book__surename
+      label.book__phone-label(for="book__phone") Телефон
+      input(type="tel" placeholder="+7 (905) 184-81-40" required)#book__phone
+      label.book__card-label(for="book__number") Данные карты
+      input(type="text" placeholder="Номер карты" required)#book__number
+      div.book__validaty-cvv
+        input(type="text" placeholder="Срок действия" required)#book__validaty
+        input(type="text" placeholder="CVV" required)#book__cvv
+      div.book__license
+        label.book__license-check-label
+          input(type="checkbox" required).book__license-check
+          span.book__license-check-pseudo
+        p.book__license-text Я согласен с пользовательским соглашением и публичной офертой
+      input(type="submit").book__button
 
   section.photosession
-    h2.photosession__title
-    div.photosession__video
-    p.photosession__description
-    table.photosession__detail
-      tr
-        td.photosession__icon 
-          img
-        td.photosession__note 3 часа съемки
-      tr
-        td.photosession__icon
-          img
-        td.photosession__note Русский
-      tr
-        td.photosession__icon
-          img
-        td.photosession__note от 850$
-      tr
-        td.photosession__icon
-          img
-        td.photosession__note Дубаи
-      tr
-        td.photosession__icon
-          img
-        td.photosession__note Более 50 фотографий
-      tr
-        td.photosession__icon
-          img
-        td.photosession__note 
-          p Более 150 отзывов с оценкой
+    h2.photosession__title Фотосессия в вертолете
+    div.photosession__wrapper
+      div.photosession__video-wrapper
+        img(src="img/photo-video.jpg", alt="").photosession__video
+        img(src="img/play.svg", alt="").photosession__play
+      div.photosession__descrip-detail
+        p.photosession__description.
+          Полет на вертолете это прекрасная возможность получить 
+          новые ощущения! А наш замечательный фотограф запечатлит 
+          лучшие моменты!
+        table.photosession__detail
+          tr.photosession__detail-tr
+            td.photosession__icon 
+              svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                path(d="M25.8099 24.4214C27.825 22.0771 28.9348 19.0864 28.9348 16.0001C28.9348 8.86713 23.1317 3.06396 15.9987 3.06396C8.86567 3.06396 3.0625 8.86713 3.0625 16.0001C3.0625 23.1331 8.86567 28.9363 15.9987 28.9363C19.0849 28.9363 22.0756 27.8265 24.4199 25.8113C24.6312 25.6297 24.9482 25.6516 25.1331 25.8584C25.3834 25.6263 25.6249 25.3848 25.857 25.1346C25.6501 24.9496 25.6282 24.6326 25.8099 24.4214ZM15.488 4.59588C15.488 4.31387 15.7167 4.08524 15.9987 4.08524C16.2807 4.08524 16.5093 4.31387 16.5093 4.59588V6.63843C16.5093 6.92044 16.2807 7.14907 15.9987 7.14907C15.7167 7.14907 15.488 6.92044 15.488 6.63843V4.59588ZM6.63697 16.5108H4.59441C4.31241 16.5108 4.08378 16.2821 4.08378 16.0001C4.08378 15.7181 4.31241 15.4895 4.59441 15.4895H6.63697C6.91898 15.4895 7.14761 15.7181 7.14761 16.0001C7.14761 16.2821 6.91898 16.5108 6.63697 16.5108ZM16.5093 27.4044C16.5093 27.6864 16.2807 27.915 15.9987 27.915C15.7167 27.915 15.488 27.6864 15.488 27.4044V25.3618C15.488 25.0798 15.7167 24.8512 15.9987 24.8512C16.2807 24.8512 16.5093 25.0798 16.5093 25.3618V27.4044ZM24.4238 9.74148L17.8427 16.3226C17.6893 17.2018 16.9211 17.8725 15.9987 17.8725C15.6676 17.8725 15.3566 17.7858 15.0865 17.6344L9.74315 22.9778C9.64347 23.0775 9.51275 23.1274 9.38209 23.1274C9.25144 23.1274 9.12071 23.0776 9.02104 22.9778C8.82161 22.7784 8.82161 22.4551 9.02104 22.2557L14.3644 16.9123C14.2634 16.732 14.1915 16.5334 14.1547 16.3227L9.74001 11.9079C9.54059 11.7085 9.54059 11.3852 9.74001 11.1858L11.1843 9.74155C11.3837 9.54213 11.7071 9.54213 11.9064 9.74155L16.3211 14.1563C16.3428 14.16 16.3644 14.1638 16.3857 14.1684L17.0816 13.4726C16.8823 13.2732 16.8823 12.95 17.0818 12.7506L22.2573 7.57508C22.3531 7.47935 22.483 7.4255 22.6184 7.4255C22.7538 7.4255 22.8837 7.47928 22.9794 7.57508L24.4237 9.01937C24.6232 9.21872 24.6232 9.54206 24.4238 9.74148ZM25.3604 16.5108C25.0784 16.5108 24.8497 16.2821 24.8497 16.0001C24.8497 15.7181 25.0784 15.4895 25.3604 15.4895H27.4029C27.6849 15.4895 27.9136 15.7181 27.9136 16.0001C27.9136 16.2821 27.6849 16.5108 27.4029 16.5108H25.3604Z" fill="white")
+                path(d="M17.6377 15.088L23.3453 9.38038L22.6231 8.6582L17.8087 13.4727C17.6093 13.6721 17.2859 13.6721 17.0866 13.4727C17.0864 13.4725 16.3906 14.1683 16.3906 14.1683C16.9261 14.2813 17.3777 14.624 17.6377 15.088Z" fill="#C7C7C7")
+                path(d="M16.0022 1.02148C7.74282 1.02148 1.02344 7.74094 1.02344 16.0002C1.02344 24.2595 7.74282 30.9789 16.0022 30.9789C24.2615 30.9789 30.9809 24.2595 30.9809 16.0002C30.9809 7.74094 24.2615 1.02148 16.0022 1.02148ZM26.5878 25.0872C26.404 25.301 26.0817 25.3254 25.8677 25.1415C25.8651 25.1393 25.8629 25.1368 25.8604 25.1346C25.6283 25.3849 25.3869 25.6264 25.1365 25.8584C25.1388 25.8609 25.1412 25.8631 25.1435 25.8657C25.3273 26.0795 25.303 26.4019 25.0891 26.5858C22.5596 28.7602 19.3325 29.9577 16.0022 29.9577C8.30596 29.9577 2.04471 23.6964 2.04471 16.0002C2.04471 8.30407 8.30596 2.04276 16.0022 2.04276C23.6984 2.04276 29.9596 8.30407 29.9596 16.0002C29.9596 19.3306 28.7622 22.5577 26.5878 25.0872Z" fill="#FC9B09")
+                path(d="M27.3137 4.6863C24.2917 1.66427 20.2738 0 16 0C11.7262 0 7.70826 1.66427 4.6863 4.6863C1.66427 7.70832 0 11.7262 0 16C0 20.2738 1.66427 24.2917 4.6863 27.3137C7.70826 30.3357 11.7262 32 16 32C20.2738 32 24.2917 30.3357 27.3137 27.3137C30.3357 24.2917 32 20.2738 32 16C32 11.7262 30.3357 7.70832 27.3137 4.6863ZM16 30.9787C7.74066 30.9787 1.02128 24.2593 1.02128 16C1.02128 7.74073 7.74066 1.02128 16 1.02128C24.2593 1.02128 30.9787 7.74073 30.9787 16C30.9787 24.2593 24.2593 30.9787 16 30.9787Z" fill="#37373F")
+                path(d="M27.9154 15.9999C27.9154 15.7179 27.6868 15.4893 27.4048 15.4893H25.3622C25.0802 15.4893 24.8516 15.7179 24.8516 15.9999C24.8516 16.2819 25.0802 16.5105 25.3622 16.5105H27.4048C27.6868 16.5105 27.9154 16.2819 27.9154 15.9999Z" fill="#082947")
+                path(d="M22.983 7.57488C22.8872 7.47915 22.7573 7.42529 22.6219 7.42529C22.4865 7.42529 22.3566 7.47908 22.2609 7.57488L17.0853 12.7504C16.8859 12.9498 16.8859 13.273 17.0851 13.4724C17.2847 13.672 17.608 13.672 17.8074 13.4726L22.6218 8.65811L23.344 9.38029L17.6364 15.0879C17.3764 14.6239 16.9248 14.2812 16.3893 14.1681C16.3679 14.1636 16.3462 14.1598 16.3247 14.156L11.9099 9.74128C11.7105 9.54186 11.3872 9.54186 11.1878 9.74128L9.74354 11.1856C9.54412 11.385 9.54412 11.7083 9.74354 11.9077L14.1583 16.3224C14.195 16.533 14.2669 16.7317 14.368 16.9121L9.02457 22.2555C8.82514 22.4549 8.82514 22.7782 9.02457 22.9776C9.12424 23.0772 9.25497 23.1272 9.38562 23.1272C9.51628 23.1272 9.647 23.0773 9.74668 22.9776L15.0901 17.6342C15.3602 17.7855 15.6712 17.8722 16.0022 17.8722C16.9246 17.8722 17.6928 17.2016 17.8462 16.3224L24.4273 9.74128C24.6267 9.54186 24.6267 9.21852 24.4273 9.01917L22.983 7.57488ZM15.0901 14.3657C14.7878 14.535 14.5372 14.7856 14.3679 15.0879L10.8268 11.5468L11.549 10.8246L15.0901 14.3657ZM15.1511 16C15.1511 15.5307 15.5329 15.1489 16.0022 15.1489C16.4715 15.1489 16.8533 15.5307 16.8533 16C16.8533 16.4693 16.4715 16.8511 16.0022 16.8511C15.5329 16.8511 15.1511 16.4693 15.1511 16Z" fill="#37373F")
+                path(d="M16.0043 2.04248C8.30812 2.04248 2.04688 8.30379 2.04688 15.9999C2.04688 23.6961 8.30812 29.9574 16.0043 29.9574C19.3347 29.9574 22.5618 28.76 25.0913 26.5856C25.3052 26.4018 25.3295 26.0793 25.1456 25.8655C25.1434 25.8629 25.1409 25.8607 25.1387 25.8582C24.9538 25.6514 24.6368 25.6295 24.4255 25.8111C22.0813 27.8263 19.0905 28.9361 16.0043 28.9361C8.87132 28.9361 3.06815 23.1329 3.06815 15.9999C3.06815 8.86692 8.87132 3.06376 16.0043 3.06376C23.1373 3.06376 28.9405 8.86692 28.9405 15.9999C28.9405 19.0862 27.8307 22.0769 25.8155 24.4212C25.6339 24.6324 25.6558 24.9494 25.8626 25.1344C25.8651 25.1366 25.8673 25.1391 25.8699 25.1413C26.0838 25.3251 26.4062 25.3008 26.59 25.087C28.7644 22.5574 29.9618 19.3303 29.9618 15.9999C29.9618 8.30379 23.7005 2.04248 16.0043 2.04248Z" fill="#37373F")
+            td.photosession__note 3 часа съемки
+          tr.photosession__detail-tr
+            td.photosession__icon
+              img(src="img/speech-bubble.svg", alt="")
+            td.photosession__note Русский
+          tr.photosession__detail-tr
+            td.photosession__icon
+              img(src="img/money.svg", alt="")
+            td.photosession__note от 850$
+          tr.photosession__detail-tr
+            td.photosession__icon
+              img(src="img/place.svg", alt="")
+            td.photosession__note Дубаи
+          tr.photosession__detail-tr
+            td.photosession__icon
+              img(src="img/photoapparat.svg", alt="")
+            td.photosession__note Более 50 фотографий
+          tr.photosession__detail-tr
+            td.photosession__icon
+              img(src="img/review.svg", alt="")
+            td.photosession__note 
+              p.photosession__note-review Более <b id="photosession__note-150">150</b><b id="photosession__note-50">50</b> отзывов с оценкой
+              img(src="img/rate.svg", alt="")
 
   section.photos
-    h2.photos__title
-    ul.photos__list
-      li.photos__item
+    h2.photos__title Фотографии пакета
+    div.photos__wrapper
+      div.photos__galery
+        img(src="img/photo1.jpg", alt="").photos__photo
+        img(src="img/photo2.jpg", alt="").photos__photo
+        img(src="img/photo3.jpg", alt="").photos__photo
+        img(src="img/photo4.jpg", alt="").photos__photo
+        img(src="img/photo3.jpg", alt="").photos__photo
+        img(src="img/photo4.jpg", alt="").photos__photo
+        img(src="img/photo2.jpg", alt="").photos__photo
+        img(src="img/photo1.jpg", alt="").photos__photo
+
+        div#photos__hidden
+          img(src="img/photo1.jpg", alt="").photos__photo
+          img(src="img/photo2.jpg", alt="").photos__photo
+          img(src="img/photo3.jpg", alt="").photos__photo
+          img(src="img/photo4.jpg", alt="").photos__photo
+          img(src="img/photo3.jpg", alt="").photos__photo
+          img(src="img/photo4.jpg", alt="").photos__photo
+          img(src="img/photo2.jpg", alt="").photos__photo
+          img(src="img/photo1.jpg", alt="").photos__photo
+      button.photos__more Показать все фото
 
   section.organizer
     div.organizer__photograph
-      img.organizer__photograph-img(src="", alt="")
+      img(src="img/heart.svg", alt="").organizer__photograph-heart
+      img.organizer__photograph-img(src="img/photograph.jpg", alt="", width="139", height="139")
       p.organizer__photograph-name Марина Иванова
       p.organizer__photograph-job Фотограф
       a.organizer__photograph-more(href="") Показать больше информации о фотографе
-    div.photograph__description
-      h3.photograph__description-title Об организаторе:
-      p.photograph__description-text.
+    div.organizer__description
+      h3.organizer__description-title Об организаторе:
+      p.organizer__description-text.
         Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы экспертов туристической отрасли, которые хорошо разбираются 
         в маркетинге, операциях 
         и услугах обслуживания клиентов, специализирующихся 
         на совместном использовании 
         и частных турах. 
 
+      p.organizer__description-text-more#about.
         Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. 
         Мы никогда не зависим 
         от субпоставщиков 
         и не свяжемся…
-      a.photograph__description-more Читать еще
-      h3.photograph__description-title Что я предоставлю:
-      p.photograph__description-text.
+      a.organizer__description-more#aboutmore Читать еще
+      h3.organizer__description-title Что я предоставлю:
+      p.organizer__description-text.
         Встречу вас на машине после длительного перелёта. 
         Качественный подбор места 
         и локации для вашей съемки. 
+      p.organizer__description-text-more#service.
         При необходимости всегда возможно прерваться 
         на обед/ужин.
         Более 50 фотографий на выходе 
         с обработкой и замечательные впечатления о Дубае !
-      a.photograph__description-more Читать еще
+      a.organizer__description-more#servicemore Читать еще
 
   section.close-photosession
-    h2.close-photosession__title
+    h2.close-photosession__title Доступная съемка в ближайщее время
     table.close-photosession__info
+      tr 
+        td
+          p.close-photosession__date Пятница, 14 сентября
+          button.close-photosession__date-button
+            svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(fill-rule="evenodd" clip-rule="evenodd" d="M16.5 1.68518H14.0601V0.56006C14.0601 0.411522 14.001 0.269067 13.896 0.164035C13.791 0.0590029 13.6485 0 13.5 0C13.3515 0 13.209 0.0590029 13.104 0.164035C12.999 0.269067 12.9399 0.411522 12.9399 0.56006V1.68518H9.56006V0.56006C9.56006 0.411522 9.50102 0.269067 9.396 0.164035C9.29098 0.0590029 9.14852 0 9 0C8.85148 0 8.70902 0.0590029 8.604 0.164035C8.49898 0.269067 8.43994 0.411522 8.43994 0.56006V1.68518H5.06006V0.56006C5.06006 0.411522 5.00102 0.269067 4.896 0.164035C4.79098 0.0590029 4.64852 0 4.5 0C4.35148 0 4.20902 0.0590029 4.104 0.164035C3.99898 0.269067 3.93994 0.411522 3.93994 0.56006V1.68518H1.5C1.10218 1.68518 0.720758 1.84324 0.439453 2.12458C0.158149 2.40592 0 2.78748 0 3.18535V16.4998C0 16.8977 0.158149 17.2793 0.439453 17.5606C0.720758 17.8419 1.10218 18 1.5 18H16.5C16.8978 18 17.2792 17.8419 17.5605 17.5606C17.8419 17.2793 18 16.8977 18 16.4998V3.18535C18 2.78748 17.8419 2.40592 17.5605 2.12458C17.2792 1.84324 16.8978 1.68518 16.5 1.68518ZM16.8701 16.4998C16.8709 16.5489 16.862 16.5976 16.8438 16.6431C16.8255 16.6887 16.7981 16.7301 16.7637 16.765C16.7292 16.8 16.6883 16.8276 16.6431 16.8465C16.5978 16.8654 16.5491 16.875 16.5 16.8749H1.5C1.39992 16.8754 1.30366 16.8362 1.23242 16.7659C1.16119 16.6956 1.12091 16.5999 1.12012 16.4998V3.18535C1.12091 3.08526 1.16119 2.98958 1.23242 2.91927C1.30366 2.84896 1.39992 2.80978 1.5 2.81031H3.93994V3.93543C3.93994 4.08397 3.99898 4.22643 4.104 4.33146C4.20902 4.43649 4.35148 4.49549 4.5 4.49549C4.64852 4.49549 4.79098 4.43649 4.896 4.33146C5.00102 4.22643 5.06006 4.08397 5.06006 3.93543V2.81031H8.43994V3.93543C8.43994 4.08397 8.49898 4.22643 8.604 4.33146C8.70902 4.43649 8.85148 4.49549 9 4.49549C9.14852 4.49549 9.29098 4.43649 9.396 4.33146C9.50102 4.22643 9.56006 4.08397 9.56006 3.93543V2.81031H12.9399V3.93543C12.9399 4.08397 12.999 4.22643 13.104 4.33146C13.209 4.43649 13.3515 4.49549 13.5 4.49549C13.6485 4.49549 13.791 4.43649 13.896 4.33146C14.001 4.22643 14.0601 4.08397 14.0601 3.93543V2.81031H16.5C16.5491 2.81017 16.5978 2.81982 16.6431 2.83868C16.6883 2.85754 16.7292 2.88523 16.7637 2.92015C16.7981 2.95508 16.8255 2.99652 16.8438 3.04206C16.862 3.08759 16.8709 3.1363 16.8701 3.18535V16.4998ZM3.93994 6.74875H6.18994V8.43594H3.93994V6.74875ZM3.93994 9.56106H6.18994V11.2493H3.93994V9.56106ZM3.93994 12.3744H6.18994V14.0616H3.93994V12.3744ZM7.87012 12.3744H10.1201V14.0616H7.87012V12.3744ZM7.87012 9.56106H10.1201V11.2493H7.87012V9.56106ZM7.87012 6.74875H10.1201V8.43594H7.87012V6.74875ZM11.8101 12.3744H14.0601V14.0616H11.8101V12.3744ZM11.8101 9.56106H14.0601V11.2493H11.8101V9.56106ZM11.8101 6.74875H14.0601V8.43594H11.8101V6.74875Z" fill="#83888A")
       tr
         td
           div.close-photosession__description
@@ -98,40 +174,60 @@ block content
             p.close-photosession__place Осталось — 1 место
           button.close-photosession__book Выбрать
       tr
-        td.photosession__icon
-          img
-        td.photosession__note 
-          p Более 150 отзывов с оценкой
+        td.close-photosession__review
+          img(src="img/review.svg", alt="")
+          div.close-photosession__review-group
+            p Более 150 отзывов с оценкой
+            img(src="img/rate.svg", alt="")
 
-      section.meeting
-        div.meeting__map
-        div.meeting__info
-          ul.meeting__list
-            li.meeting__item
-              p.meeting__number 1
-              div.meeting__decription 
-                p.meeting__question Где встречаемся?
-                p.meeting__answer Москва
-            li.meeting__item
-              p.meeting__number 2
-              div.meeting__decription 
-                p.meeting__question Время съемки
-                p.meeting__answer 3 часа
-            li.meeting__item
-              p.meeting__number 3
-              div.meeting__decription 
-                p.meeting__question Мест осталось:
-                p.meeting__answer 2 места
-          div.meeting__organizer
-            img.meeting__organizer-img(src="", alt="")
-            div.meeting__organizer-info
-              p.meeting__organizer-name Мария Иванова
-              p.meeting__organizer-job Фотограф
-              a.meeting__organizer-more Показать больше информации о фотографе
+  section.meeting
+    div.meeting__map 
+      iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A593f09d8765b3c37a767abbcdc113a4f26154a1f679655b96208fa82186a2bfb&amp;source=constructor" width="100%" height="500" frameborder="0")
+    div.meeting__info
+      ul.meeting__list
+        li.meeting__item
+          div.meeting__number 
+            p 1
+          div.meeting__decription 
+            p.meeting__question Где встречаемся?
+            p.meeting__answer Москва
+        li.meeting__item
+          div.meeting__number 
+            p 2
+          div.meeting__decription 
+            p.meeting__question Время съемки
+            p.meeting__answer 3 часа
+        li.meeting__item
+          div.meeting__number 
+            p 3
+          div.meeting__decription 
+            p.meeting__question Мест осталось:
+            p.meeting__answer 2 места
+      div.meeting__buttons 
+        button.meeting__button-left
+          svg(width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg")
+            path(fill-rule="evenodd" clip-rule="evenodd" d="M0.361709 8.56006L7.90971 0.390137C8.01882 0.267464 8.15267 0.169283 8.30244 0.102051C8.45222 0.0348184 8.61453 -6.09025e-08 8.7787 -5.37261e-08C8.94288 -4.65498e-08 9.1052 0.0348184 9.25497 0.102051C9.40475 0.169283 9.5386 0.267464 9.64771 0.390137C9.87964 0.650272 10.0078 0.986931 10.0078 1.33545C10.0078 1.68397 9.87964 2.02014 9.6477 2.28027L2.9687 9.50049L9.6477 16.7305C9.87954 16.9887 10.0078 17.3234 10.0078 17.6704C10.0078 18.0174 9.87954 18.3521 9.6477 18.6104C9.5385 18.733 9.40457 18.8312 9.25471 18.8984C9.10485 18.9657 8.94247 19.0005 8.77821 19.0005C8.61396 19.0005 8.45156 18.9657 8.3017 18.8984C8.15184 18.8312 8.01791 18.733 7.90871 18.6104L0.361709 10.4502C0.129234 10.1884 0.00110679 9.85059 0.00170857 9.50049C-0.000526828 9.15308 0.127981 8.8171 0.361709 8.56006Z" fill="#C7C7C7")
+        button.meeting__button-right
+          svg(width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg")
+            path(fill-rule="evenodd" clip-rule="evenodd" d="M9.6461 10.4404L2.0981 18.6104C1.98899 18.733 1.85515 18.8312 1.70537 18.8984C1.55559 18.9657 1.39329 19.0005 1.22911 19.0005C1.06494 19.0005 0.902616 18.9657 0.752838 18.8984C0.603061 18.8312 0.469217 18.733 0.360107 18.6104C0.128171 18.3502 -4.31401e-08 18.0136 -5.83743e-08 17.665C-7.36085e-08 17.3165 0.128171 16.9804 0.360107 16.7202L7.03911 9.5L0.360107 2.27002C0.128269 2.01181 2.97603e-05 1.67709 2.97452e-05 1.33008C2.973e-05 0.983063 0.128269 0.648346 0.360107 0.390137C0.469308 0.267441 0.603237 0.169291 0.753097 0.102051C0.902956 0.034811 1.06534 -4.65677e-08 1.2296 -5.37475e-08C1.39385 -6.09272e-08 1.55626 0.034811 1.70611 0.102051C1.85597 0.16929 1.9899 0.267441 2.09911 0.390137L9.6461 8.55029C9.87858 8.81208 10.0067 9.14989 10.0061 9.5C10.0083 9.84741 9.87983 10.1834 9.6461 10.4404Z" fill="#C7C7C7")
+      div.meeting__radio-buttons
+        label.meeting__radio-label
+          input(type="radio" name="slider" checked)#meeting__radio-button1
+          span.meeting__radio-pseudo
+        label.meeting__radio-label
+          input(type="radio" name="slider")#meeting__radio-button2
+          span.meeting__radio-pseudo
+        label.meeting__radio-label
+          input(type="radio" name="slider")#meeting__radio-button3
+          span.meeting__radio-pseudo
+      div.meeting__organizer
+        img.meeting__organizer-img(src="img/photograph.jpg", alt="", width="67", height="67")
+        div.meeting__organizer-info
+          p.meeting__organizer-name Мария Иванова
+          p.meeting__organizer-job Фотограф
+          a.meeting__organizer-more Показать больше информации о фотографе
   
   section.reviews
     h2.reviews__title
     ul.reviews__list
       li.reviews__item
-        
-

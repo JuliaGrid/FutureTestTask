@@ -1,0 +1,260 @@
+.photosession__title {
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    width: 300px;
+    margin: 0;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.photosession__video {
+    display: block;
+    width: 290px;
+    height: 197px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.photosession__play {
+    position: absolute;
+    right: 50%;
+    margin-right: -124px;
+    margin-top: -34px;
+}
+
+.photosession__video-youtube {
+    width: 290px;
+    height: 197px;
+    position: absolute;
+    margin-top: -197px; 
+    left: 50%;
+    margin-left: -145px;
+}
+
+.photosession__description {
+    width: 300px;
+    margin: 0;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.photosession__detail {
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    border-collapse: collapse;
+}
+
+.photosession__icon {
+    width: 42px;
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.photosession__note-review {
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.photosession__detail-tr:nth-child(2) {
+    .photosession__icon {
+        padding-top: 10px;
+        img {
+            width: 31px;
+            height: 27px;
+        }
+    }
+
+    .photosession__note {
+        padding-top: 4px;
+    }
+}
+
+.photosession__detail-tr:nth-child(3) {
+    .photosession__icon {
+        padding-top: 11px;
+        img {
+            width: 31px;
+            height: 19px;
+        }
+    }
+
+    .photosession__note {
+        padding-top: 8px;
+    }
+}
+
+.photosession__detail-tr:nth-child(4) {
+    .photosession__icon {
+        padding-top: 17px;
+        img {
+            width: 31px;
+            height: 30px;
+        }
+    }
+
+    .photosession__note {
+        padding-top: 22px;
+    }
+}
+
+.photosession__detail-tr:nth-child(5) {
+    .photosession__icon {
+        padding-top: 19px;
+        padding-bottom: 32px;
+        img {
+            width: 35px;
+            height: 28px;
+        }
+    }
+
+    .photosession__note {
+        padding-bottom: 8px;
+    }
+}
+
+.photosession__detail-tr:nth-child(6) {
+    .photosession__icon {
+        img {
+            width: 36px;
+            height: 41px;
+        }
+    }
+}
+
+.photosession__detail-tr:last-child {
+    margin-top: 40px;
+}
+
+.photosession__detail-tr:last-child td{
+    border-collapse: collapse;
+    border-top: 0.5px solid #C7C7C7;
+    border-bottom: 0.5px solid #C7C7C7;
+    padding-top: 16px;
+    padding-bottom: 6px;
+}
+
+@media (min-width: 1200px) {
+    .photosession {
+        width: 1140px;
+        margin: auto;
+    }
+
+    .photosession__title {
+        font-size: 40px;
+        line-height: 49px;
+        text-align: left;
+        width: 460px;
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .photosession__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 1140px;
+        margin: auto;
+    }
+
+    .photosession__video-wrapper {
+        order: 2;
+    }
+
+    .photosession__video {
+        order: 2;
+        width: 557px;
+        height: 374px;
+        margin-right: 0;
+        margin-top: -98px;
+    }
+
+    .photosession__play {
+        width: 16px;
+        height: 23px;
+        margin-right: -530px;
+    }
+
+    .photosession__video-youtube {
+        width: 557px;
+        height: 374px;
+        margin-top: -374px; 
+        margin-left: 13px;
+    }
+
+    .photosession__description {
+        width: 550px;
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 18px;
+    }
+
+    .photosession__detail {
+        width: 320px;
+        margin: 0;
+        margin-top: 23px;
+        tbody {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .photosession__note {
+        padding-left: 8px;
+    }
+
+    .photosession__detail-tr:nth-child(2) {
+        order: 4;
+        .photosession__icon {
+            padding-top: 16px;
+            img {
+                width: 31px;
+                height: 31px;
+            }
+        }
+        .photosession__note {
+            padding-top: 12px;
+        }
+    }
+
+    .photosession__detail-tr:nth-child(3) {
+        display: none;
+    }
+
+    .photosession__detail-tr:nth-child(4) {
+        order: 2;
+        .photosession__icon {
+            padding-top: 15px;
+            img {
+                width: 33px;
+                height: 33px;
+            }
+        }
+    }
+
+    .photosession__detail-tr:nth-child(5) {
+        .photosession__icon {
+            padding-top: 14px;
+            padding-bottom: 0px;
+        }
+        .photosession__note {
+            padding-top: 19px;
+        }
+    }
+
+    .photosession__detail-tr:nth-child(6) {
+        order: 6;
+        margin-top: 27px;
+        .photosession__icon {
+            img {
+                width: 32px;
+                height: 35px;
+            }
+        }
+    }
+}

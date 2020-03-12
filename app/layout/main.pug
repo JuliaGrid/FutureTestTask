@@ -4,28 +4,40 @@ doctype html
 html(lang="ru")
 	head
 		title= pageTitle
-		link(href="css/style.css")
+		link(href="css/style.css", rel="stylesheet")
 	body
+		div.black-overlay
 		header.main-header
-			img.main-header__logo(src="img/logo-mobile.png", alt="", width="84", height="16")
-			p.main-header__city Москва
-			svg(width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-				rect(width="20" height="20" fill="url(#pattern0)")
-				defs
-					pattern(id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1")
-						use(xlink:href="#image0" transform="scale(0.05)")
-				image(id="image0" width="20" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABkElEQVQ4jaXTz0sVYRTG8Y9TLlyES3GRIK7TVupfIEYodY0SpFXtJCGkliEIFYq6uARFtooQTBL8E+7KcOWyFi4UWraqK/bLFnMu6NyZ64gPvDCc85zve+Z939M2/3JBgS7jAe5jIGK7eI93+JNXlBTAOlHDa3ThY6yuiNXCk9tFVm1YxyBm8Ar/TjQwjZXwjOL4rA5vYARzqJ6Aie9q5EbCe0p5wAkcYjkn19ByeCbKAHvxBfUWwHp4essAfys48Iw6w3smcDt27m8Buxae7TLAVfzEG3Tk5DvwNjyrZYAH0ucyjM8Yw5VYY9HVUHgOssV57xA+4CYq2MrJfwpPk/KAd7CEHnzHDr7hF65G5xV8xSw2ioCXpBPwKMz3sKn5JttxG/PScaziMf5y+gxfBGwN16Wj1fQsIrYenrWoeZ7tsIInYZiSmc8CHYYXnkovazOJX1jAHh6WhDV0HDV7WER7gkn04ZnW41aketT24W6CcfyQua1zaiMYtxLpiNVwdAHgUTD6E3Rj/wKwhvbR/R88q1yiIYgNFAAAAABJRU5ErkJggg==")
+			div.main-header__wrapper
+				img(src="img/helyfly.svg", alt="")
+				p.main-header__city Москва
+				svg(width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink").main-header__profile
+					rect(width="20" height="20" fill="url(#pattern0)")
+					defs
+						pattern(id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1")
+							use(xlink:href="#image0" transform="scale(0.05)")
+					image(id="image0" width="20" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABkElEQVQ4jaXTz0sVYRTG8Y9TLlyES3GRIK7TVupfIEYodY0SpFXtJCGkliEIFYq6uARFtooQTBL8E+7KcOWyFi4UWraqK/bLFnMu6NyZ64gPvDCc85zve+Z939M2/3JBgS7jAe5jIGK7eI93+JNXlBTAOlHDa3ThY6yuiNXCk9tFVm1YxyBm8Ar/TjQwjZXwjOL4rA5vYARzqJ6Aie9q5EbCe0p5wAkcYjkn19ByeCbKAHvxBfUWwHp4essAfys48Iw6w3smcDt27m8Buxae7TLAVfzEG3Tk5DvwNjyrZYAH0ucyjM8Yw5VYY9HVUHgOssV57xA+4CYq2MrJfwpPk/KAd7CEHnzHDr7hF65G5xV8xSw2ioCXpBPwKMz3sKn5JttxG/PScaziMf5y+gxfBGwN16Wj1fQsIrYenrWoeZ7tsIInYZiSmc8CHYYXnkovazOJX1jAHh6WhDV0HDV7WER7gkn04ZnW41aketT24W6CcfyQua1zaiMYtxLpiNVwdAHgUTD6E3Rj/wKwhvbR/R88q1yiIYgNFAAAAABJRU5ErkJggg==")
+				p.main-header__phone
+					span.main-header__phone-note Телефон:
+					span.main-header__phone-number 8(800)-123-12-12
 		main
 		block content
 		footer.main-footer
-			section.main-footer__first
-				img.main-footer__logo(src="", alt="")
-				div.main-footer__networks-language
-					div.main-footer__social-networks
-					p.main-footer__language
-			section.main-footer__second
+			div.main-footer__logo-networks
+				img.main-footer__logo(src="img/helyfly.svg", alt="", width="84", height="16")
+				div.main-footer__social-networks
+					img(src="img/vk.png", alt="", width="25", height="15")
+					img(src="img/facebook.png", alt="", width="25", height="25")
+					img(src="img/instragram.png", alt="", width="25", height="25")
+			div.main-footer__systems-language
 				div.main-footer__systems
-				div.main-footer__info
-					p.main-footer__support
-					p.main-footer__author
+					img(src="img/MC.svg", alt="", width="34", height="21")
+					img(src="img/VISA.svg", alt="", width="34", height="23")
+					img(src="img/PP.svg", alt="", width="34", height="23")
+				button.main-footer__language RU
+			div.main-footer__info
+				p.main-footer__support Тех. поддержка: 8(800)700-00-00
+				p.main-footer__author © 2018 HELYFLY. All Rights Reserved.
+
+		script(src='main.js')
 			

@@ -1,0 +1,10 @@
+.close-photosession__title {
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+}
+.close-photosession__info {
+  width: 290px;
+  margin: auto;
+  border: 1px solid #C7C7C7;
+}
